@@ -1,0 +1,15 @@
+{
+  "domain": "altruist",
+  "name": "Altruist Sensor",
+  "codeowners": [
+    "@LoSk-p"
+  ],
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/altruist",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "requirements": [],
+  "zeroconf": ["_altruist._tcp.local."],
+  "dependencies": ["zeroconf"],
+  "version": "0.1.0"
+}

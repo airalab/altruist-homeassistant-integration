@@ -1,0 +1,18 @@
+{
+    "config": {
+        "abort": {
+            "invalid_ip": "Invalid IP address",
+            "no_devices_found": "No devices found on the network",
+            "single_instance_allowed": "Already configured. Only a single configuration possible."
+        },
+        "error": {
+            "invalid_ip": "Invalid IP address",
+            "no_device_found": "Can't connect to device on {ip_address}"
+        },
+        "step": {
+            "discovery_confirm": {
+                "description": "Do you want to start setup {model}?"
+            }
+        }
+    }
+}

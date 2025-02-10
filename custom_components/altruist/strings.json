@@ -1,0 +1,18 @@
+{
+  "config": {
+    "step": {
+      "discovery_confirm": {
+        "description": "Do you want to start setup {model}?"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "[%key:common::config_flow::abort::single_instance_allowed%]",
+      "no_devices_found": "[%key:common::config_flow::abort::no_devices_found%]",
+      "invalid_ip": "Invalid IP address"
+    },
+    "error": {
+      "invalid_ip": "Invalid IP address",
+      "no_device_found": "Can't connect to device on {ip_address}"
+    }
+  }
+}
