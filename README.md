@@ -15,4 +15,4 @@ If any Altruist sensors are on the local network, the integration will automatic
 
 **3.2. Manual**
 
-To manually add an Altruist sensor, you'll need its IP address. Navigate to Settings → Devices & Services → Integrations and click the Add Integration button. Find Altruist Sensor in the list, select it, and then enter the sensor's IP address when prompted.
+To manually add an Altruist sensor, you'll need its IP address. Navigate to Settings → Devices & Services → Integrations and click the Add Integration button. Find `Altruist Sensor` in the list, select it, and then enter the sensor's IP address when prompted.

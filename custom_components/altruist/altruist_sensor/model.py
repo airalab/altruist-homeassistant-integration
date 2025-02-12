@@ -3,7 +3,10 @@
 from dataclasses import dataclass
 
 from zeroconf.asyncio import AsyncServiceInfo
-from homeassistant.helpers.service_info.zeroconf import ZeroconfServiceInfo
+try:
+    from homeassistant.helpers.service_info.zeroconf import ZeroconfServiceInfo
+except ModuleNotFoundError:
+    from homeassistant.components.zeroconf import ZeroconfServiceInfo
 
 
 @dataclass

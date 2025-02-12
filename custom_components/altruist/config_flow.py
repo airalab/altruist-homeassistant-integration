@@ -8,7 +8,10 @@ import voluptuous as vol
 
 from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
-from homeassistant.helpers.service_info.zeroconf import ZeroconfServiceInfo
+try:
+    from homeassistant.helpers.service_info.zeroconf import ZeroconfServiceInfo
+except ModuleNotFoundError:
+    from homeassistant.components.zeroconf import ZeroconfServiceInfo
 
 from .altruist_sensor import AltruistClient, AltruistDeviceModel, AltruistError
 from .const import DOMAIN

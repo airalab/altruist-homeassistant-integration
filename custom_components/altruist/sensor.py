@@ -101,6 +101,8 @@ class AltruistSensor(CoordinatorEntity, SensorEntity):
             manufacturer="Robonomics",
             model="Altruist Sensor",
             sw_version=self._device.fw_version,
+            configuration_url=f"http://{self._device.ip_address}",
+            serial_number=self._device_id,
         )
 
     @callback
