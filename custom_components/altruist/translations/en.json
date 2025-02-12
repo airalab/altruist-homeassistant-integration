@@ -1,5 +1,6 @@
 {
     "config": {
+        "flow_title": "{name} {ip_address}",
         "abort": {
             "invalid_ip": "Invalid IP address",
             "no_devices_found": "No devices found on the network",

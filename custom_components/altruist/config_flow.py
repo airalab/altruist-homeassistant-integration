@@ -64,6 +64,7 @@ class AltruistConfigFlow(ConfigFlow, domain=DOMAIN):
         _LOGGER.info("Zeroconf device: %s", self.device)
         await self.async_set_unique_id(self.device.id)
         self._abort_if_unique_id_configured()
+        self.context.update({"title_placeholders": {"name": "Altruist", "ip_address": self.device.ip_address}})
         return await self.async_step_discovery_confirm()
 
     async def async_step_discovery_confirm(
