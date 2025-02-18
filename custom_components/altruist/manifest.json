@@ -11,5 +11,6 @@
   "requirements": [],
   "zeroconf": ["_altruist._tcp.local."],
   "dependencies": ["zeroconf"],
+  "documentation": "https://github.com/airalab/altruist-homeassistant-integration/blob/main/README.md",
   "version": "0.1.0"
 }
