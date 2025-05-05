@@ -11,5 +11,5 @@
   "requirements": [],
   "zeroconf": ["_altruist._tcp.local."],
   "dependencies": ["zeroconf"],
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

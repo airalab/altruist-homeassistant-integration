@@ -59,6 +59,7 @@ SENSOR_NOISE_AVG = "PCBA_noiseAvg"
 SENSOR_CCS811_CO2 = "CCS_CO2"
 SENSOR_CCS8111_TVOC = "CCS_TVOC"
 SENSOR_RADIATION = "GC"
+SENSOR_SCD4x_CO2 = "SCD4x_co2"
 
 SENSOR_DESCRIPTIONS = {
     SENSOR_BME280_HUMIDITY: SensorEntityDescription(
@@ -335,6 +336,13 @@ SENSOR_DESCRIPTIONS = {
         key=SENSOR_RADIATION,
         native_unit_of_measurement="μR/h",
         name='Radiation',
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    SENSOR_SCD4x_CO2: SensorEntityDescription(
+        device_class=SensorDeviceClass.CO2,
+        native_unit_of_measurement=CONCENTRATION_PARTS_PER_MILLION,
+        key=SENSOR_SCD4x_CO2,
+        name='CO2',
         state_class=SensorStateClass.MEASUREMENT,
     ),
 }

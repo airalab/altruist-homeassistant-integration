@@ -32,7 +32,10 @@ async def async_setup_entry(
     client = config_entry.runtime_data
     coordinator = AltruistDataUpdateCoordinator(hass, client)
     await coordinator.async_config_entry_first_refresh()
-    sensors = [AltruistSensor(coordinator, client.device, SENSOR_DESCRIPTIONS[sensor_name]) for sensor_name in client.sensor_names]
+    sensors = []
+    for sensor_name in client.sensor_names:
+        if sensor_name in SENSOR_DESCRIPTIONS:
+            sensors.append(AltruistSensor(coordinator, client.device, SENSOR_DESCRIPTIONS[sensor_name]))
     async_add_entities(sensors)
 
 
