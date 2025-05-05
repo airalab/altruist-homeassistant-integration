@@ -1,15 +1,14 @@
 {
   "domain": "altruist",
   "name": "Altruist Sensor",
-  "codeowners": [
-    "@airalab"
-  ],
+  "codeowners": ["@airalab"],
   "config_flow": true,
-  "issue_tracker": "https://github.com/airalab/altruist-homeassistant-integration/issues",
+  "dependencies": ["zeroconf"],
+  "documentation": "https://github.com/airalab/altruist-homeassistant-integration/blob/main/README.md",
   "integration_type": "device",
   "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/airalab/altruist-homeassistant-integration/issues",
   "requirements": [],
-  "zeroconf": ["_altruist._tcp.local."],
-  "dependencies": ["zeroconf"],
-  "version": "0.1.1"
+  "version": "0.1.1",
+  "zeroconf": ["_altruist._tcp.local."]
 }
